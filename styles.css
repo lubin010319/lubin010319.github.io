@@ -57,7 +57,7 @@ section[id], footer[id] { scroll-margin-top: 6rem; }
   white-space: nowrap;
 }
 .wordmark::after { content: ""; width: .42rem; height: .42rem; background: var(--accent); border-radius: 50%; }
-.navigation { display: flex; align-items: center; gap: 1.7rem; }
+.navigation { display: flex; flex-wrap: wrap; align-items: center; gap: 1.7rem; }
 .navigation a, .footer-links a { font-size: .9rem; text-decoration: none; }
 .navigation a:hover, .footer-links a:hover { text-decoration: underline; text-underline-offset: .22em; }
 
@@ -210,7 +210,7 @@ body:has(dialog[open]) { overflow: hidden; }
 @media (max-width: 39rem) {
   .frame { width: calc(100% - 1.9rem); }
   .masthead-inner { flex-wrap: wrap; gap: .15rem .7rem; padding-block: .6rem .35rem; }
-  .navigation { width: 100%; order: 2; justify-content: flex-start; gap: 1.25rem; }
+  .navigation { width: 100%; order: 2; justify-content: flex-start; gap: .1rem .8rem; }
   .navigation a { display: inline-block; padding-block: .25rem; font-size: .84rem; }
   .wordmark { font-size: 1.35rem; }
   section[id], footer[id] { scroll-margin-top: 6.5rem; }

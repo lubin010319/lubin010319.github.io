@@ -14,3 +14,5 @@ python -m http.server 8080 --bind 127.0.0.1
 - [LoRA データ選別](https://github.com/lubin010319/lora-data-curation-exp) — ローカル QA、tiny SDXL 学習とブラインド評価の実行記録
 
 [図版の出典](assets/ATTRIBUTION.md) を参照してください。漫画・LoRA のサンプル図は各リポジトリで CC0 として公開しています。版画・ビジュアル作品集 PDF は著者の作品です。
+
+[版画・ビジュアル作品集](https://lubin010319.github.io/art/) は原版PDFのページ順を保持し、WebPで全29ページを閲覧できます。原版PDFはリーダーから開けます。
