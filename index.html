@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="LU BIN（ロ ヒン）の作品集。アニメキャラクター検索、日本語漫画の OCR 評価、LoRA 学習データの品質管理。">
+  <meta name="description" content="LU BIN（ロ ヒン）のポートフォリオ。二次元キャラクター検索、日本語漫画データの OCR 評価基盤、LoRA 学習データの品質管理。">
   <meta name="theme-color" content="#f7f3ea">
   <link rel="canonical" href="https://lubin010319.github.io/">
   <link rel="icon" href="data:,">
@@ -13,13 +13,13 @@
 </head>
 <body>
   <a class="skip" href="#main" data-t="skip">本文へ移動</a>
-  <header class="masthead">
+  <header class="masthead" id="masthead">
     <div class="frame masthead-inner">
       <a class="wordmark" href="#top">LU BIN</a>
       <nav class="navigation" aria-label="メインナビゲーション" data-aria="mainNav">
         <a href="#projects" data-t="navProjects">プロジェクト</a>
         <a href="#skills" data-t="navSkills">スキル・経歴</a>
-        <a href="art/" data-t="navArt">版画作品集</a>
+        <a href="art/" data-t="navArt">版画作品集 (29P)</a>
         <a href="#contact" data-t="navContact">連絡先</a>
       </nav>
       <div class="language" role="group" aria-label="表示言語" data-aria="language" hidden>
@@ -33,194 +33,194 @@
   <main id="main" class="frame">
     <section id="top" class="hero">
       <div class="hero-main">
-        <p class="specialty">ML Data Engineer</p>
+        <p class="specialty" data-t="specialty">ML Data Engineer · キャラクター検索 / 漫画データ</p>
         <h1>LU BIN <span lang="ja">ロ ヒン</span></h1>
-        <p class="hero-focus" data-t="focus">キャラクター検索と漫画データ</p>
-        <p class="hero-near" data-t="available">横浜在住。東京での出社勤務が可能です。</p>
+        <p class="hero-focus" data-t="focus">キャラクター検索 × 日本語漫画データ</p>
+        <p class="hero-near" data-t="available">横浜在住・東京出社可。二次元ドメイン知識とデータエンジニアリングの掛け合わせ。</p>
         <div class="actions">
-          <a href="#projects" class="action action-primary" data-t="viewProjects">プロジェクトを見る</a>
-          <a class="action" href="https://github.com/lubin010319">GitHub</a>
+          <a href="#projects" class="action action-primary" data-t="viewProjects">実測プロジェクトを見る</a>
+          <a class="action" href="art/" data-t="viewArt">版画作品集 (29P)</a>
+          <a class="action" href="https://github.com/lubin010319" target="_blank" rel="noopener">GitHub</a>
           <button type="button" class="action" data-copy data-t="copy" hidden>メールをコピー</button>
         </div>
         <div class="copy-feedback" data-copy-feedback aria-live="polite"></div>
       </div>
       <div class="hero-profile">
-        <p data-t="intro">版画と印刷データの品質管理で培った目を、画像の収集・クリーニングから評価用データの設計まで活かしています。</p>
+        <p data-t="intro">版画制作と商業印刷の品質管理で鍛えた視覚判断力を活かし、イラストの収集・重複排除から LoRA データ選別、漫画 OCR の評価基盤構築まで一貫して手がけています。</p>
         <ul class="facts">
-          <li><strong>JLPT N1</strong><span data-t="japanese">日本語</span></li>
-          <li><strong data-t="kyoto">京都精華大学</strong><span data-t="printmaking">版画専攻</span></li>
-          <li><strong data-t="residence">在留資格あり</strong><span data-t="residenceType">技術・人文知識・国際業務</span></li>
-          <li><strong data-t="yokohama">横浜在住</strong><span data-t="tokyo">東京通勤圏</span></li>
+          <li><strong>JLPT N1</strong><span data-t="japanese">日本語原文の読解・仕様策定</span></li>
+          <li><strong data-t="kyoto">京都精華大学</strong><span data-t="printmaking">版画専攻 · 二次元造形感覚</span></li>
+          <li><strong data-t="residence">就労ビザ保有</strong><span data-t="residenceType">技術・人文知識・国際業務</span></li>
+          <li><strong data-t="yokohama">横浜在住</strong><span data-t="tokyo">東京勤務すぐ対応可</span></li>
         </ul>
       </div>
     </section>
 
     <section id="projects" class="projects" aria-labelledby="projects-title">
       <header class="section-head">
-        <h2 id="projects-title" data-t="projects">プロジェクト</h2>
+        <h2 id="projects-title" data-t="projects">実測プロジェクト</h2>
       </header>
 
       <article class="project project-featured" aria-labelledby="rag-title">
         <div class="project-info">
-          <p class="project-category" data-t="ragCategory">画像検索・データ整備</p>
-          <h3 id="rag-title" data-t="ragTitle">キャラクター検索</h3>
-          <p class="project-copy" data-t="ragDescription">利用許諾のあるイラストを収集し、品質を確認して重複を除去。日本語・英語のテキストや画像から検索し、キャラクター属性で結果を再順位付けします。</p>
+          <p class="project-category" data-t="ragCategory">01 / キャラクター検索・データクレンジング</p>
+          <h3 id="rag-title" data-t="ragTitle">二次元キャラクターマルチモーダル検索</h3>
+          <p class="project-copy" data-t="ragDescription">ライセンス確認済みのキャラクターイラストを自動収集し、破損・低解像度・近似重複を排除。日英テキスト検索と画像検索の両方に対応し、キャラクター属性の重なりで検索結果を再順位付けします。</p>
           <dl class="summary-metrics">
-            <div><dt data-t="ragImages">収集 → インデックス</dt><dd data-result="ragImages">17 → 16</dd></div>
+            <div><dt data-t="ragImages">収集 → 重複排除後</dt><dd data-result="ragImages">17 → 16</dd></div>
             <div><dt>Recall@5</dt><dd data-result="recall">75% → 100%</dd></div>
           </dl>
-          <p class="project-note" data-t="ragBoundary">Recall@5 は赤いジャケットのクエリ1件の結果。該当4枚のうち、上位5件に入った画像が3枚から4枚に増えました。品質図には検証用の3枚を含みます。</p>
-          <p class="stack">Python · pHash · WD14 · SigLIP 2 · Faiss</p>
-          <a class="text-link" href="https://github.com/lubin010319/anime-char-rag-pipeline" data-t="repo">GitHub で実装を見る</a>
+          <p class="project-note" data-t="ragBoundary">WD14 の背景・構図ノイズを除外して髪色・瞳色・衣装タグを抽出し、0.75 × SigLIP 2 + 0.25 × 属性一致率で再順位付け。該当4件を含む検索で Recall@5 を 75% → 100% に改善しました。</p>
+          <p class="stack">Python · pHash · WD14 ONNX · SigLIP 2 · Faiss</p>
+          <a class="text-link" href="https://github.com/lubin010319/anime-char-rag-pipeline" target="_blank" rel="noopener" data-t="repo">GitHub で実装を見る →</a>
         </div>
         <div class="gallery" data-gallery>
           <div class="gallery-tabs" role="tablist" data-aria="ragTabs" aria-label="画像検索の図版" hidden>
-              <button type="button" role="tab" id="ragRerank-tab" aria-controls="ragRerank-panel" aria-selected="true" data-t="ragRerankTab">Top-5 比較</button>
-              <button type="button" role="tab" id="ragClean-tab" aria-controls="ragClean-panel" aria-selected="false" data-t="ragCleanTab">クリーニング</button>
-              <button type="button" role="tab" id="ragTags-tab" aria-controls="ragTags-panel" aria-selected="false" data-t="ragTagsTab">タグ分布</button>
-            </div>
+            <button type="button" role="tab" id="ragRerank-tab" aria-controls="ragRerank-panel" aria-selected="true" data-t="ragRerankTab">Top-5 比較</button>
+            <button type="button" role="tab" id="ragClean-tab" aria-controls="ragClean-panel" aria-selected="false" data-t="ragCleanTab">クリーニング</button>
+            <button type="button" role="tab" id="ragTags-tab" aria-controls="ragTags-panel" aria-selected="false" data-t="ragTagsTab">タグ分布</button>
+          </div>
 
-            <figure class="gallery-panel" id="ragRerank-panel" role="tabpanel" aria-labelledby="ragRerank-tab">
-              <a class="figure-link figure-wide" href="assets/retrieval_rerank_demo.png" data-zoom
-                data-aria="zoom" aria-label="画像を拡大" aria-describedby="ragRerankCaption">
-                <img src="assets/retrieval_rerank_demo.png" fetchpriority="high" decoding="async" data-alt="ragRerankCaption" alt="赤いジャケットの検索例。上段が検索結果、下段が再順位付け後。">
-                <span class="zoom-symbol" aria-hidden="true"></span>
-              </a>
-              <figcaption id="ragRerankCaption" data-t="ragRerankCaption">赤いジャケットの検索例。上段が検索結果、下段が再順位付け後。</figcaption>
-            </figure>
+          <figure class="gallery-panel" id="ragRerank-panel" role="tabpanel" aria-labelledby="ragRerank-tab">
+            <a class="figure-link figure-wide" href="assets/retrieval_rerank_demo.png" data-zoom
+              data-aria="zoom" aria-label="画像を拡大" aria-describedby="ragRerankCaption">
+              <img src="assets/retrieval_rerank_demo.png" fetchpriority="high" decoding="async" data-alt="ragRerankCaption" alt="赤いジャケットの検索例。上段がベクトル検索のみ、下段が属性再順位付け後。">
+              <span class="zoom-symbol" aria-hidden="true"></span>
+            </a>
+            <figcaption id="ragRerankCaption" data-t="ragRerankCaption">赤いジャケットの検索例。上段がベクトル検索のみ、下段が属性再順位付け後。</figcaption>
+          </figure>
 
-            <figure class="gallery-panel" id="ragClean-panel" role="tabpanel" aria-labelledby="ragClean-tab">
-              <a class="figure-link figure-wide" href="assets/dedup_pipeline_summary.png" data-zoom
-                data-aria="zoom" aria-label="画像を拡大" aria-describedby="ragCleanCaption">
-                <img src="assets/dedup_pipeline_summary.png" loading="lazy" decoding="async" data-alt="ragCleanCaption" alt="品質チェックの通過件数と、重複・低解像度の除外例。">
-                <span class="zoom-symbol" aria-hidden="true"></span>
-              </a>
-              <figcaption id="ragCleanCaption" data-t="ragCleanCaption">品質チェックの通過件数と、重複・低解像度の除外例。</figcaption>
-            </figure>
+          <figure class="gallery-panel" id="ragClean-panel" role="tabpanel" aria-labelledby="ragClean-tab">
+            <a class="figure-link figure-wide" href="assets/dedup_pipeline_summary.png" data-zoom
+              data-aria="zoom" aria-label="画像を拡大" aria-describedby="ragCleanCaption">
+              <img src="assets/dedup_pipeline_summary.png" loading="lazy" decoding="async" data-alt="ragCleanCaption" alt="品質チェックの通過件数と、pHash による重複・低解像度の除外例。">
+              <span class="zoom-symbol" aria-hidden="true"></span>
+            </a>
+            <figcaption id="ragCleanCaption" data-t="ragCleanCaption">品質チェックの通過件数と、pHash による重複・低解像度の除外例。</figcaption>
+          </figure>
 
-            <figure class="gallery-panel" id="ragTags-panel" role="tabpanel" aria-labelledby="ragTags-tab">
-              <a class="figure-link figure-wide" href="assets/tag_distribution.png" data-zoom
-                data-aria="zoom" aria-label="画像を拡大" aria-describedby="ragTagsCaption">
-                <img src="assets/tag_distribution.png" loading="lazy" decoding="async" data-alt="ragTagsCaption" alt="WD14 の生タグと、キャラクター属性に絞った後の分布。">
-                <span class="zoom-symbol" aria-hidden="true"></span>
-              </a>
-              <figcaption id="ragTagsCaption" data-t="ragTagsCaption">WD14 の生タグと、キャラクター属性に絞った後の分布。</figcaption>
-            </figure>
+          <figure class="gallery-panel" id="ragTags-panel" role="tabpanel" aria-labelledby="ragTags-tab">
+            <a class="figure-link figure-wide" href="assets/tag_distribution.png" data-zoom
+              data-aria="zoom" aria-label="画像を拡大" aria-describedby="ragTagsCaption">
+              <img src="assets/tag_distribution.png" loading="lazy" decoding="async" data-alt="ragTagsCaption" alt="WD14 の生タグと、キャラクター属性に絞った後の分布。">
+              <span class="zoom-symbol" aria-hidden="true"></span>
+            </a>
+            <figcaption id="ragTagsCaption" data-t="ragTagsCaption">WD14 の生タグと、キャラクター属性に絞った後の分布。</figcaption>
+          </figure>
         </div>
       </article>
 
       <article class="project project-manga" aria-labelledby="manga-title">
         <div class="project-info">
-          <p class="project-category" data-t="mangaCategory">漫画データ・日本語 OCR</p>
-          <h3 id="manga-title" data-t="mangaTitle">漫画レイアウトの評価</h3>
-          <p class="project-copy" data-t="mangaDescription">オリジナルの日本語漫画4ページで、コマと吹き出しの検出、セリフの認識、読み順を評価。日中対訳のアノテーション仕様と Label Studio の設定を用意しました。</p>
+          <p class="project-category" data-t="mangaCategory">02 / 漫画データ・日本語 OCR 評価</p>
+          <h3 id="manga-title" data-t="mangaTitle">日本語漫画レイアウト解析・Eval 基準</h3>
+          <p class="project-copy" data-t="mangaDescription">日本語漫画におけるコマ検出、吹き出し抽出、セリフ認識、右から左への読み順を一貫評価するベンチマークを構築。実務の現場でそのまま使える日中対訳ガイドラインと Label Studio 設定を備えています。</p>
           <table class="metric-table">
-            <caption data-t="mangaScope">オリジナル4ページで計測 · IoU ≥ 0.50</caption>
+            <caption data-t="mangaScope">IoU ≥ 0.50 評価ベンチマーク実測</caption>
             <tbody>
               <tr><th scope="row" data-t="panelF1">コマ検出 F1</th><td data-result="panel">94.7%</td></tr>
               <tr><th scope="row" data-t="bubbleF1">吹き出し検出 F1</th><td data-result="bubble">94.7%</td></tr>
-              <tr><th scope="row" data-t="cer">検出・認識全体の文字誤り率</th><td data-result="cer">27.1%</td></tr>
+              <tr><th scope="row" data-t="cer">端到端 CER（漏れペナルティ込み）</th><td data-result="cer">27.1%</td></tr>
             </tbody>
           </table>
-          <p class="project-note" data-t="mangaBoundary">縦書きの擬音、見開き、スクリーントーンで起きたエラーを記録しました。</p>
-          <p class="stack">OpenCV · Manga OCR · Label Studio</p>
-          <a class="text-link" href="https://github.com/lubin010319/manga-eval-benchmark" data-t="repo">GitHub で実装を見る</a>
+          <p class="project-note" data-t="mangaBoundary">見開きの綴じ目による枠切れ、吹き出し外の縦書き擬音、高密度スクリーントーン上の文字崩れという実務課題を可視化し、単なる OCR 精度ではなく検出漏れ込みの端到端 CER でボトルネックを特定しました。</p>
+          <p class="stack">OpenCV · Manga OCR · Label Studio · Eval Guideline</p>
+          <a class="text-link" href="https://github.com/lubin010319/manga-eval-benchmark" target="_blank" rel="noopener" data-t="repo">GitHub で実装を見る →</a>
         </div>
         <div class="gallery" data-gallery>
           <div class="gallery-tabs" role="tablist" data-aria="mangaTabs" aria-label="漫画評価の図版" hidden>
-              <button type="button" role="tab" id="mangaOverlay-tab" aria-controls="mangaOverlay-panel" aria-selected="true" data-t="mangaOverlayTab">検出結果</button>
-              <button type="button" role="tab" id="mangaBad-tab" aria-controls="mangaBad-panel" aria-selected="false" data-t="mangaBadTab">失敗事例</button>
-              <button type="button" role="tab" id="mangaMetrics-tab" aria-controls="mangaMetrics-panel" aria-selected="false" data-t="mangaMetricsTab">評価指標</button>
-            </div>
+            <button type="button" role="tab" id="mangaOverlay-tab" aria-controls="mangaOverlay-panel" aria-selected="true" data-t="mangaOverlayTab">検出結果</button>
+            <button type="button" role="tab" id="mangaBad-tab" aria-controls="mangaBad-panel" aria-selected="false" data-t="mangaBadTab">三大失敗ケース</button>
+            <button type="button" role="tab" id="mangaMetrics-tab" aria-controls="mangaMetrics-panel" aria-selected="false" data-t="mangaMetricsTab">評価指標</button>
+          </div>
 
-            <figure class="gallery-panel" id="mangaOverlay-panel" role="tabpanel" aria-labelledby="mangaOverlay-tab">
-              <a class="figure-link figure-manga" href="assets/manga_detection_overlay.png" data-zoom
-                data-aria="zoom" aria-label="画像を拡大" aria-describedby="mangaOverlayCaption">
-                <img src="assets/manga_detection_overlay.png" loading="lazy" decoding="async" data-alt="mangaOverlayCaption" alt="青がコマ、緑が吹き出し。右側に実際の日本語 OCR 結果を表示。">
-                <span class="zoom-symbol" aria-hidden="true"></span>
-              </a>
-              <figcaption id="mangaOverlayCaption" data-t="mangaOverlayCaption">青がコマ、緑が吹き出し。右側に実際の日本語 OCR 結果を表示。</figcaption>
-            </figure>
+          <figure class="gallery-panel" id="mangaOverlay-panel" role="tabpanel" aria-labelledby="mangaOverlay-tab">
+            <a class="figure-link figure-manga" href="assets/manga_detection_overlay.png" data-zoom
+              data-aria="zoom" aria-label="画像を拡大" aria-describedby="mangaOverlayCaption">
+              <img src="assets/manga_detection_overlay.png" loading="lazy" decoding="async" data-alt="mangaOverlayCaption" alt="青がコマ、緑が吹き出し。右側に実際の日本語 OCR 結果を表示。">
+              <span class="zoom-symbol" aria-hidden="true"></span>
+            </a>
+            <figcaption id="mangaOverlayCaption" data-t="mangaOverlayCaption">青がコマ、緑が吹き出し。右側に実際の日本語 OCR 結果を表示。</figcaption>
+          </figure>
 
-            <figure class="gallery-panel" id="mangaBad-panel" role="tabpanel" aria-labelledby="mangaBad-tab">
-              <a class="figure-link figure-manga" href="assets/bad_case_analysis.png" data-zoom
-                data-aria="zoom" aria-label="画像を拡大" aria-describedby="mangaBadCaption">
-                <img src="assets/bad_case_analysis.png" loading="lazy" decoding="async" data-alt="mangaBadCaption" alt="縦書きの擬音、見開きの綴じ目、スクリーントーンで起きた失敗。">
-                <span class="zoom-symbol" aria-hidden="true"></span>
-              </a>
-              <figcaption id="mangaBadCaption" data-t="mangaBadCaption">縦書きの擬音、見開きの綴じ目、スクリーントーンで起きた失敗。</figcaption>
-            </figure>
+          <figure class="gallery-panel" id="mangaBad-panel" role="tabpanel" aria-labelledby="mangaBad-tab">
+            <a class="figure-link figure-manga" href="assets/bad_case_analysis.png" data-zoom
+              data-aria="zoom" aria-label="画像を拡大" aria-describedby="mangaBadCaption">
+              <img src="assets/bad_case_analysis.png" loading="lazy" decoding="async" data-alt="mangaBadCaption" alt="縦書きの擬音、見開きの綴じ目、スクリーントーンで起きた失敗。">
+              <span class="zoom-symbol" aria-hidden="true"></span>
+            </a>
+            <figcaption id="mangaBadCaption" data-t="mangaBadCaption">縦書きの擬音、見開きの綴じ目、スクリーントーンで起きた失敗。</figcaption>
+          </figure>
 
-            <figure class="gallery-panel" id="mangaMetrics-panel" role="tabpanel" aria-labelledby="mangaMetrics-tab">
-              <a class="figure-link figure-manga" href="assets/eval_metrics_chart.png" data-zoom
-                data-aria="zoom" aria-label="画像を拡大" aria-describedby="mangaMetricsCaption">
-                <img src="assets/eval_metrics_chart.png" loading="lazy" decoding="async" data-alt="mangaMetricsCaption" alt="検出 F1、文字誤り率、読み順の実測値。">
-                <span class="zoom-symbol" aria-hidden="true"></span>
-              </a>
-              <figcaption id="mangaMetricsCaption" data-t="mangaMetricsCaption">検出 F1、文字誤り率、読み順の実測値。</figcaption>
-            </figure>
+          <figure class="gallery-panel" id="mangaMetrics-panel" role="tabpanel" aria-labelledby="mangaMetrics-tab">
+            <a class="figure-link figure-manga" href="assets/eval_metrics_chart.png" data-zoom
+              data-aria="zoom" aria-label="画像を拡大" aria-describedby="mangaMetricsCaption">
+              <img src="assets/eval_metrics_chart.png" loading="lazy" decoding="async" data-alt="mangaMetricsCaption" alt="検出 F1、文字誤り率、読み順の実測値。">
+              <span class="zoom-symbol" aria-hidden="true"></span>
+            </a>
+            <figcaption id="mangaMetricsCaption" data-t="mangaMetricsCaption">検出 F1、文字誤り率、読み順の実測値。</figcaption>
+          </figure>
         </div>
       </article>
 
       <article class="project project-lora" aria-labelledby="lora-title">
         <div class="project-info">
-          <p class="project-category" data-t="loraCategory">学習データの品質管理</p>
-          <h3 id="lora-title" data-t="loraTitle">LoRA データ選別 A/B</h3>
-          <p class="project-copy" data-t="loraDescription">オリジナルのキャラクター画像を使い、透かし、複数人、低解像度、タグ矛盾、近似重複、極端なアスペクト比を点検。原データと選別済みデータを同じ設定で比較できるようにしました。</p>
+          <p class="project-category" data-t="loraCategory">03 / 学習データ QA・A/B 実験</p>
+          <h3 id="lora-title" data-t="loraTitle">LoRA 学習データの品質管理 A/B</h3>
+          <p class="project-copy" data-t="loraDescription">キャラ LoRA の品質低下を招く「透かし・複数人映り込み・低解像度・タグ矛盾・近似重複・極端な縦横比」の6項目を自動 QA で遮断。SDXL バケット整形とブラインド評価を同一条件で比較します。</p>
           <dl class="summary-metrics">
-            <div><dt data-t="loraImages">A 元画像 → B 選別後</dt><dd data-result="loraImages">14 → 8</dd></div>
-            <div><dt data-t="loraPairs">比較用の生成画像</dt><dd data-result="loraPairs">12</dd></div>
+            <div><dt data-t="loraImages">A 元データ → B 精選</dt><dd data-result="loraImages">14 → 8</dd></div>
+            <div><dt data-t="loraPairs">固定 Seed 比較図</dt><dd data-result="loraPairs">12</dd></div>
           </dl>
-          <p class="project-note" data-t="loraBoundary">RTX 4070 Ti で tiny SDXL を各群2ステップ学習し、LoRA の保存・再読込と同一 Prompt・Seed の比較画像12枚を検証。フルサイズ SDXL の学習とブラインド評価は Colab から再現できます。フルサイズでの実行は未検証です。</p>
-          <p class="stack">Diffusers · PEFT · SDXL · Aspect Ratio Bucketing</p>
+          <p class="project-note" data-t="loraBoundary">Diffusers / PEFT による同一設定の A/B 学習パイプラインと SDXL 用バケット設定・Colab 再現環境を整備。RTX 4070 Ti 上で tiny SDXL 学習〜LoRA 再読込〜12枚の固定 Seed ブラインド比較まで一連の検証を完了しています。</p>
+          <p class="stack">Diffusers · PEFT · SDXL Bucketing · TOML · Colab</p>
           <div class="project-links">
-            <a class="text-link" href="https://github.com/lubin010319/lora-data-curation-exp" data-t="repo">GitHub で実装を見る</a>
-            <a class="text-link" href="https://colab.research.google.com/github/lubin010319/lora-data-curation-exp/blob/main/train_and_eval_colab.ipynb" data-t="colab">Colab を開く</a>
+            <a class="text-link" href="https://github.com/lubin010319/lora-data-curation-exp" target="_blank" rel="noopener" data-t="repo">GitHub で実装を見る →</a>
+            <a class="text-link" href="https://colab.research.google.com/github/lubin010319/lora-data-curation-exp/blob/main/train_and_eval_colab.ipynb" target="_blank" rel="noopener" data-t="colab">Colab で開く →</a>
           </div>
         </div>
         <div class="gallery lora-gallery">
+          <figure class="gallery-panel">
+            <a class="figure-link figure-pair" href="assets/curation_before_after.png" data-zoom
+              data-aria="zoom" aria-label="画像を拡大" aria-describedby="loraCompareCaption">
+              <img src="assets/curation_before_after.png" loading="lazy" decoding="async" data-alt="loraCompareCaption" alt="上段は元データ、下段は選別と解像度調整を終えたサンプル。">
+              <span class="zoom-symbol" aria-hidden="true"></span>
+            </a>
+            <figcaption id="loraCompareCaption" data-t="loraCompareCaption">上段は元データ、下段は選別と解像度調整を終えたサンプル。</figcaption>
+          </figure>
 
-            <figure class="gallery-panel">
-              <a class="figure-link figure-pair" href="assets/curation_before_after.png" data-zoom
-                data-aria="zoom" aria-label="画像を拡大" aria-describedby="loraCompareCaption">
-                <img src="assets/curation_before_after.png" loading="lazy" decoding="async" data-alt="loraCompareCaption" alt="上段は元データ、下段は選別と解像度調整を終えたサンプル。">
-                <span class="zoom-symbol" aria-hidden="true"></span>
-              </a>
-              <figcaption id="loraCompareCaption" data-t="loraCompareCaption">上段は元データ、下段は選別と解像度調整を終えたサンプル。</figcaption>
-            </figure>
-
-            <figure class="gallery-panel">
-              <a class="figure-link figure-pair" href="assets/aspect_bucketing_stats.png" data-zoom
-                data-aria="zoom" aria-label="画像を拡大" aria-describedby="loraBucketsCaption">
-                <img src="assets/aspect_bucketing_stats.png" loading="lazy" decoding="async" data-alt="loraBucketsCaption" alt="アスペクト比別の件数と除外理由。">
-                <span class="zoom-symbol" aria-hidden="true"></span>
-              </a>
-              <figcaption id="loraBucketsCaption" data-t="loraBucketsCaption">アスペクト比別の件数と除外理由。</figcaption>
-            </figure>
+          <figure class="gallery-panel">
+            <a class="figure-link figure-pair" href="assets/aspect_bucketing_stats.png" data-zoom
+              data-aria="zoom" aria-label="画像を拡大" aria-describedby="loraBucketsCaption">
+              <img src="assets/aspect_bucketing_stats.png" loading="lazy" decoding="async" data-alt="loraBucketsCaption" alt="アスペクト比別の件数と除外理由。">
+              <span class="zoom-symbol" aria-hidden="true"></span>
+            </a>
+            <figcaption id="loraBucketsCaption" data-t="loraBucketsCaption">アスペクト比別の件数と除外理由。</figcaption>
+          </figure>
         </div>
       </article>
     </section>
 
     <section id="skills" class="skills" aria-labelledby="skills-title">
-      <header class="section-head"><h2 id="skills-title" data-t="skills">スキル・経歴</h2></header>
+      <header class="section-head"><h2 id="skills-title" data-t="skills">スキル・バックグラウンド</h2></header>
       <div class="skills-layout">
         <div class="background">
-          <h3 data-t="backgroundTitle">印刷の品質管理から、画像データの評価へ</h3>
-          <p data-t="education">京都精華大学の版画専攻で、色や構図、紙に落とし込む工程を学びました。</p>
-          <p data-t="job">現在は印刷物の制作で画像データの照合、解像度やカラーモード、版面の確認を担当しています。プロジェクトでは同じ視点を、学習データの除外基準や漫画の正解データの定義に活かしています。</p>
+          <h3 data-t="backgroundTitle">版画と印刷 QA の審美眼を、AI データ品質へ</h3>
+          <p data-t="education">京都精華大学・版画専攻で構図、配色、線画表現、そして紙面へ精密に定着させる造形プロセスを学びました。</p>
+          <p data-t="job">現在は広告印刷の現場で入稿データの検版・解像度・網点・カラーモードの品質管理を担当。そこで培った細部への厳しいチェック眼を、学習データのフィルタリング基準や漫画アノテーション仕様にそのまま落とし込んでいます。</p>
           <a class="art-link" href="art/">
             <img src="assets/portfolio-cover.webp" width="180" height="252" loading="lazy" alt="">
             <span>
-              <strong data-t="artPortfolio">版画・ビジュアル作品集</strong>
-              <span data-t="artMeta">全29ページをウェブで読む</span>
+              <strong data-t="artPortfolio">版画・ビジュアル作品集（全29ページ）</strong>
+              <span data-t="artMeta">構図と色彩感覚のポートフォリオを見る →</span>
             </span>
           </a>
         </div>
         <dl class="skill-grid">
-          <div><dt data-t="dataSkill">収集・クリーニング</dt><dd>Python · requests · Pillow · pHash</dd></div>
-          <div><dt data-t="searchSkill">マルチモーダル検索</dt><dd>SigLIP 2 · Faiss · WD14</dd></div>
-          <div><dt data-t="ocrSkill">OCR・アノテーション</dt><dd>Manga OCR · OpenCV · Label Studio</dd></div>
-          <div><dt data-t="trainingSkill">LoRA 学習・画像制作</dt><dd>Diffusers · PEFT · Adobe Illustrator</dd></div>
+          <div><dt data-t="dataSkill">データ収集・クレンジング</dt><dd>Python · Commons API · Pillow · pHash · JSONL</dd></div>
+          <div><dt data-t="searchSkill">マルチモーダル検索・再順位付け</dt><dd>PyTorch · SigLIP 2 · Faiss · WD14 ONNX</dd></div>
+          <div><dt data-t="ocrSkill">漫画解析・アノテーション基準</dt><dd>OpenCV · Manga OCR · Label Studio · IoU / CER</dd></div>
+          <div><dt data-t="trainingSkill">LoRA 検証・商業デザインツール</dt><dd>Diffusers · PEFT · SDXL Bucketing · Illustrator</dd></div>
         </dl>
       </div>
     </section>
@@ -233,7 +233,8 @@
         <a class="email" id="email" href="mailto:lubin23333@gmail.com">lubin23333@gmail.com</a>
       </div>
       <div class="footer-links">
-        <a href="https://github.com/lubin010319">GitHub</a>
+        <a href="art/" data-t="navArt">版画作品集 (29P)</a>
+        <a href="https://github.com/lubin010319" target="_blank" rel="noopener">GitHub</a>
         <a href="assets/ATTRIBUTION.md" data-t="credits">図版の出典・ライセンス</a>
       </div>
     </div>
